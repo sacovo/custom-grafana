@@ -3,7 +3,7 @@ FROM alpine/git as source
 WORKDIR /
 
 RUN git config --global advice.detachedHead false \
-  && git clone --depth 1 --branch v10.2.3 https://github.com/grafana/grafana.git
+  && git clone --depth 1 --branch v10.3.3 https://github.com/grafana/grafana.git
 
 FROM node:20-alpine3.18 as js-builder
 
